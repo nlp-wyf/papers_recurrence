@@ -8,7 +8,6 @@ import numpy as np
 import random
 
 import scipy
-from sklearn.metrics.pairwise import cosine_similarity
 
 random.seed(1)
 np.random.seed(1)

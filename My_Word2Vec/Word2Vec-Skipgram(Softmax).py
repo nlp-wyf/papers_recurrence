@@ -1,5 +1,7 @@
-# %%
-# code by Tae Hwan Jung @graykode
+"""
+original from:
+https://github.com/graykode/nlp-tutorial/tree/master/1-2.Word2Vec
+"""
 import numpy as np
 import torch
 import torch.nn as nn
@@ -19,18 +21,21 @@ def random_batch():
     return random_inputs, random_labels
 
 
-# Model
 class Word2Vec(nn.Module):
     def __init__(self):
         super(Word2Vec, self).__init__()
         # W and WT is not Traspose relationship
-        self.W = nn.Linear(voc_size, embedding_size, bias=False)  # voc_size > embedding_size Weight
-        self.WT = nn.Linear(embedding_size, voc_size, bias=False)  # embedding_size > voc_size Weight
+        # voc_size > embedding_size Weight
+        self.W = nn.Linear(voc_size, embedding_size, bias=False)
+        # embedding_size > voc_size Weight
+        self.WT = nn.Linear(embedding_size, voc_size, bias=False)
 
     def forward(self, X):
         # X : [batch_size, voc_size]
-        hidden_layer = self.W(X)  # hidden_layer : [batch_size, embedding_size]
-        output_layer = self.WT(hidden_layer)  # output_layer : [batch_size, voc_size]
+        # hidden_layer : [batch_size, embedding_size]
+        hidden_layer = self.W(X)
+        # output_layer : [batch_size, voc_size]
+        output_layer = self.WT(hidden_layer)
         return output_layer
 
 
