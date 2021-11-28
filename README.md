@@ -15,4 +15,5 @@
 ### BERT   
 [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding(2018)](https://arxiv.org/abs/1810.04805)
 
-  
+### ViT  
+[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale(2021)](https://arxiv.org/abs/2010.11929)  
