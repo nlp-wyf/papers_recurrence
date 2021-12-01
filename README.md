@@ -9,6 +9,12 @@
 ### Word2Vec   
 [Distributed Representations of Words and Phrases and their Compositionality(2013)](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 
+### TextRCNN  
+[Recurrent Convolutional Neural Networks for Text Classification(2015)](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745/9552)
+
+### DPCNN  
+[Deep Pyramid Convolutional Neural Networks for Text Categorization(2017)](https://aclanthology.org/P17-1052.pdf)
+
 ### Transformer   
 [Attention Is All You Need(2017)](https://arxiv.org/abs/1706.03762)
 
