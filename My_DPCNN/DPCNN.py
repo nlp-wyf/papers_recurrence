@@ -25,14 +25,15 @@ class DPCNN(nn.Module):
         x = x.unsqueeze(1)  # [batch_size, 1, seq_len, emb]
 
         x = self.conv_region(x)  # [batch_size, 250, seq_len-3+1, 1]
+        
         x = self.padding1(x)  # [batch_size, 250, seq_len, 1]
         x = self.relu(x)
-
         x = self.conv(x)  # [batch_size, 250, seq_len-3+1, 1]
+        
         x = self.padding1(x)  # [batch_size, 250, seq_len, 1]
         x = self.relu(x)
-
         x = self.conv(x)  # [batch_size, 250, seq_len-3+1, 1]
+        
         while x.size()[2] >= 2:
             x = self._block(x)
         # [batch_size, 250, 1, 1]
