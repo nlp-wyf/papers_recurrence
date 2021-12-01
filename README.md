@@ -9,6 +9,9 @@
 ### Word2Vec   
 [Distributed Representations of Words and Phrases and their Compositionality(2013)](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
 
+### TextCNN
+[Convolutional Neural Networks for Sentence Classification(2014)](https://arxiv.org/abs/1408.5882)
+
 ### TextRCNN  
 [Recurrent Convolutional Neural Networks for Text Classification(2015)](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9745/9552)
 
