@@ -14,7 +14,10 @@ class TextRNN_ATT(nn.Module):
         self.lstm = nn.LSTM(embed_dim, hidden_size, num_layers,
                             bidirectional=True, batch_first=True, dropout=dropout)
         self.tanh1 = nn.Tanh()
-        self.w = nn.Parameter(torch.Tensor(hidden_size * 2))
+        # 随机赋值，有可能出现nan值，导致训练失败
+        # self.w = nn.Parameter(torch.Tensor(hidden_size * 2))
+        # 改为如下方式:
+        self.w = nn.Parameter(torch.zeros(hidden_size * 2))
         self.tanh2 = nn.Tanh()
         self.fc1 = nn.Linear(hidden_size * 2, hidden_size2)
         self.fc = nn.Linear(hidden_size2, num_classes)
