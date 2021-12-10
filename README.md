@@ -24,6 +24,9 @@
 ### TextRNN_ATT
 [Attention-Based Bidirectional Long Short-Term Memory Networks for Relation Classification(2016)](https://aclanthology.org/P16-2034.pdf)
 
+### HAN
+[Hierarchical Attention Networks for Document Classification(2016)](https://aclanthology.org/N16-1174.pdf)
+
 ### DPCNN  
 [Deep Pyramid Convolutional Neural Networks for Text Categorization(2017)](https://aclanthology.org/P17-1052.pdf)
 
