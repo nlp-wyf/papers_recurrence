@@ -38,3 +38,6 @@
 
 ### ViT  
 [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale(2020)](https://arxiv.org/abs/2010.11929)  
+
+### MAE
+[Masked Autoencoders Are Scalable Vision Learners(2021)](https://arxiv.org/abs/2111.06377)   
