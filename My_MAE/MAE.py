@@ -114,7 +114,6 @@ mae = MAE(
 
 img = torch.randn(1, 3, 224, 224)
 
-
 loss, pred = mae(img)
 print(loss.item())
 # pred.shape [batch, masked_pixel_values, dim]
