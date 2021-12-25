@@ -39,5 +39,8 @@
 ### ViT  
 [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale(2020)](https://arxiv.org/abs/2010.11929)  
 
+### SimCSE
+[SimCSE: Simple Contrastive Learning of Sentence Embeddings(2021)](https://arxiv.org/abs/2104.08821)
+
 ### MAE
 [Masked Autoencoders Are Scalable Vision Learners(2021)](https://arxiv.org/abs/2111.06377)   
